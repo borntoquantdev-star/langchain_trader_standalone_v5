@@ -1,0 +1,29 @@
+# LangChain SMC Trading Agent — Standalone Version
+# ติดตั้ง: pip install -r requirements.txt
+
+# SMC Indicators (คำนวณ FVG, BOS, OB, Liquidity)
+smartmoneyconcepts>=1.0.4
+
+# MetaTrader5 (Windows only — ถ้าไม่มีจะ fallback เป็น CSV)
+# ถ้าใช้ Mac/Linux ให้ comment บรรทัดนี้ออก
+MetaTrader5>=5.0.45
+
+# LangChain + OpenAI
+langchain>=0.3.0
+langchain-openai>=0.2.0
+langchain-core>=0.3.0
+openai>=1.0.0
+
+# Data
+python-dotenv>=1.0.0
+pandas>=2.0.0
+numpy>=1.26.0
+requests>=2.31.0
+
+# Visualization
+matplotlib>=3.7.0
+mplfinance>=0.12.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.0.0
