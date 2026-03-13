@@ -4,7 +4,7 @@
 
 ---
 
-## 🗂️ ลำดับเรียน (4 หน่วย)
+## 🗂️ ลำดับเรียน (5 หน่วย)
 
 ### 📘 หน่วยที่ 1 — LLM คืออะไร (เริ่มที่นี่!)
 | ไฟล์ | เนื้อหา |
@@ -16,12 +16,17 @@
 |------|---------|
 | `unit2_llm_trading.ipynb` | วิเคราะห์ราคา, Candlestick, แนวรับ/ต้าน |
 
-### 📙 หน่วยที่ 3 — LangChain Tools & Agents
+### ⛓️ หน่วยที่ 3 — Chain (LCEL)
 | ไฟล์ | เนื้อหา |
 |------|---------|
-| `unit3_tools_agents.ipynb` | `@tool`, `bind_tools`, `AgentExecutor` |
+| `unit3_chains.ipynb` | `prompt \| llm \| parser`, PromptTemplate, OutputParser, Trading Chain |
 
-### 📕 หน่วยที่ 4 — Full SMC Trading Agent
+### 📙 หน่วยที่ 4 — Tools & Agents
+| ไฟล์ | เนื้อหา |
+|------|---------|
+| `unit4_tools_agents.ipynb` | `@tool`, `bind_tools`, `AgentExecutor` |
+
+### 📕 หน่วยที่ 5 — Full SMC Trading Agent
 | # | ไฟล์ | เนื้อหา |
 |---|------|---------|
 | 1 | `01_mt5_data_and_smc.ipynb` | ดึง MT5 + SMC indicators + กราฟ |
@@ -30,28 +35,7 @@
 | 4 | `04_agent_with_tools.ipynb` | Agent + Tools |
 | 5 | `05_full_trading_agent.ipynb` | Top-Down + Chat + Auto Loop |
 
-> **เรียนตามลำดับ** หน่วย 1 → 2 → 3 → 4
-
----
-
-## 📐 โครงสร้างโค้ด (ฟังก์ชันหลัก/รอง)
-
-ทุก notebook ใช้โครงสร้าง:
-```python
-# Cell: define + เรียกใช้ทีละฟังก์ชัน
-def setup_llm(): ...
-llm = setup_llm()          # ← เห็นผลทันที
-
-def demo_first_prompt(): ...
-demo_first_prompt(llm)     # ← เห็นผลทันที
-
-# Cell สุดท้าย: main() รวมทุกอย่าง
-def main():
-    llm = setup_llm()
-    demo_first_prompt(llm)
-    ...
-main()
-```
+> **เรียนตามลำดับ** หน่วย 1 → 2 → 3 → 4 → 5
 
 ---
 
@@ -63,7 +47,7 @@ cp .env.example .env   # ใส่ OPENAI_API_KEY
 jupyter notebook
 ```
 
-> ⚠️ หน่วย 1-3 ต้องการแค่ `OPENAI_API_KEY` | หน่วย 4 ต้องการ MT5 หรือ CSV
+> ⚠️ หน่วย 1-4 ต้องการแค่ `OPENAI_API_KEY` | หน่วย 5 ต้องการ MT5 หรือ CSV
 
 ## ⚠️ คำเตือน
 
