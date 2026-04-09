@@ -35,7 +35,12 @@
 | 4 | `04_agent_with_tools.ipynb` | Agent + Tools |
 | 5 | `05_full_trading_agent.ipynb` | Top-Down + Chat + Auto Loop |
 
-> **เรียนตามลำดับ** หน่วย 1 → 2 → 3 → 4 → 5
+### 🚨 หน่วยที่ 5 — Telegram Notification
+| ไฟล์ | เนื้อหา |
+|------|---------|
+| `unit5_telegram_notification.ipynb` | การส่งแจ้งเตือนข้อความและรูปภาพกราฟไปยัง Telegram |
+
+> **เรียนตามลำดับ** หน่วย 1 → 2 → 3 → 4 → 5 → 6 (Full Agent)
 
 ---
 
@@ -47,7 +52,7 @@ cp .env.example .env   # ใส่ OPENAI_API_KEY
 jupyter notebook
 ```
 
-> ⚠️ หน่วย 1-4 ต้องการแค่ `OPENAI_API_KEY` | หน่วย 5 ต้องการ MT5 หรือ CSV
+> ⚠️ หน่วย 1-5 ต้องการแค่ `OPENAI_API_KEY`, `TELEGRAM_BOT_TOKEN` | หน่วย 6 (Full Agent) ต้องการ MT5 หรือ CSV
 
 ## ⚠️ คำเตือน
 
